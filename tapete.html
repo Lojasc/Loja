@@ -1,103 +1,188 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-<head> 
-<title>cama mesa e banho</title> <meta charset="utf-8">
-</head> 
+</head>
+<body style="background-color:orange">
+
+<script>
+function checkChoice(whichbox) { with(whichbox.form) { if (whichbox.checked == false) hiddentotal.value = eval(hiddentotal.value) * eval(whichbox.value); else hiddentotal.value = eval(hiddentotal.value) * eval(whichbox.value); return (formatCurrency(hiddentotal.value));; } } 
+
+
+function formatCurrency(num) { num = num.toString().replace(/\$|\,/g, ''); if (isNaN(num)) num = "0"; cents = Math.floor((num * 100 + 0.5) % 100); num = Math.floor((num * 100 + 0.5) / 100).toString(); if (cents < 10) cents = "0" + cents; for (var i = 0; i < Math.floor((num.length - (1 + i)) / 3); i++) num = num.substring(0, num.length - (4 * i + 3)) + ',' + num.substring(num.length - (4 * i + 3)); return ("" + num + "." + cents); } 
+
+function calcular()
+ { var n1 = parseInt(document.getElementById('n1').value, 10); 
+ var n2 = parseInt(document.getElementById('n2').value, 10); document.getElementById('resultado').innerHTML = n1 * n2; }
+
+
+</script>  
+ <script>
+function funcao1()
+{
+alert("OBRIGADA PELA PREFERÊNCIA!!!;")
+}
+</script>
+</head>
 <body>
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+<body style="background-color:gold ">
 
-<p>TAPETE GRANDE</p>
+  <a href="index.html">INICIO</a>
+<p style="text-align: center; font-size: 20px; color: blue">
+<b> 🔰TAPETES🔰<br><br>
 
-<table>
-<tr>
-
-<td><img src="tap1.jpeg"alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 12.00">
-
-<td><img src="tap2.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 13.90">
-<td><img src="tap3.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 13.00">
-    <td><img src="tap4.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 14.90">
-<tr>
-
-<td><img src="tap5.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 14.00">
-<td><img src="tap6.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 15.00">
-<td><img src="tap7.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 15.00">
-    <td><img src="tap8.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 15.00">
-</table><table>
-<p>TAPETE MEDIO</p>
-
-<tr>
-
-<td><img src="tap9.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 15.90">
-<td><img src="tap10.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 15.90">
-<td><img src="tap11.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 17.90">
-    <td><img src="tap12.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 17.90">
+   
+      
+      
+     
+         
+  <table border="1">  
+   
 
 
 <tr>
+<td><input type="checkbox" name="tapete" value="tapete_R$ 19.90 (01)"  >
+<img src="tap1.jpeg" alt="some" width="82" height="100"><br>R$ 15.90</label>
+ <label class="btn btn-default"> 
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (02)"  ><img src="tap2.jpeg" alt="some" width="82" height="100"><br>R$ 15.90</label> <label class="btn btn-default">
+ 
+ 
+<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (03)"><img src="tap3.jpeg" alt="some" width="80" height="100"><br>R$ 15.90</label>
+<label class="btn btn-default"> 
+ 
+ 
+   
 
-<td><img src="tap13.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 19.90">
-<td><img src="tap14.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 19.90">
-<td><img src="tap15.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 21.00">
-    <td><img src="tap16.jpeg" alt="some" width="82" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 21.00"><br>
+<td>
 
-</table><table>
-<p>TAPETE PEQUENO</p>
+
+<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (04)"  ><img src="tap4.jpeg" alt="some" width="80" height="100"><br>R$ 15.90</label>
+ <label class="btn btn-default"> 
+
+ <tr>
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (05)"  ><img src="tap5.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label> <label class="btn btn-default"> 
+  
+ 
+ 
+<td>
+
+
+<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (06)"  ><img src="tap6.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label>
+ <label class="btn btn-default"> 
+   
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (07)"><img src="tap7.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label> <label class="btn btn-default"> 
+  
+
+
+<td>
+
+
+<input type="checkbox" name="tapete"   value=" tapete_R$ 19.90 (08)"  ><img src="tap8.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label>
+ <label class="btn btn-default"> 
 <tr>
+ <td><input type="checkbox"  name="tapete" id="option2" value=" tapete_R$ 19.90 (09)"  ><img src="tap9.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label> <label class="btn btn-default">
+ 
+ 
+<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (10)" ><img src="tap10.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label>
+<label class="btn btn-default"> 
+ 
+ 
+   
 
-<td><img src="tap17.jpeg" alt="some" width="82" height="100">
+<td>
 
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 23.90"><br>
-<td><img src="tap18.jpeg" alt="some" width="82" height="100">
 
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 23.90">
+<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (11)"  ><img src="tap11.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label>
+ <label class="btn btn-default"> 
 
-   <td><img src="tap19.jpeg" alt="some" width="82" height="100">
-<br>
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 25.90">
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (12)"  ><img src="tap12.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label> <label class="btn btn-default"> 
+  
+ <tr>
+ 
+<td>
 
-    <td><img src="tap20.jpeg" alt="some" width="80" height="100">
-<input type="checkbox" value="R$ 25.90">
-<input type="button" value="R$ 29.90">
-</table>
+
+<input type="checkbox" name="tapete" value="tapete_R$ 19.90 (13)"  ><img src="tap13.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label>
+ <label class="btn btn-default"> 
+   
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (14)"  ><img src="tap14.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label> <label class="btn btn-default"> 
+  
+
+
+<td>
+
+
+<input type="checkbox" name="tapete"   value=" tapete_R$ 19.90 (015)"  ><img src="tap15.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label>
+ <label class="btn btn-default"> 
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (016)"  ><img src="tap16.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label> <label class="btn btn-default">
+ 
+ <tr>
+<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (017)" ><img src="tap17.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+<label class="btn btn-default"> 
+ 
+ 
+   
+
+<td>
+
+
+<input type="checkbox" name="tapete" value="tapete_R$ 19.90 (018)"><img src="tap18.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+ <label class="btn btn-default"> 
+
+ 
+ <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (019)"  ><img src="tap19.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label> <label class="btn btn-default"> 
+  
+ 
+ 
+<td>
+
+
+<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (20)"  ><img src="tap20.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+ <label class="btn btn-default"> 
+   
+ 
+ </table>
+
+
+
+</select>
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  
+ <input type="hidden" name="recipient" value="multijogo1980@gmail.com">  
+ 
+
+ 
+ 
+ <input type="hidden" name="subject" value="Assunto" <input type="hidden" name="email" value="gmail.com">
+
+
+
+ 
+ 
+
+<input class="nome"type="text" size="18" name="NOME"required placeholder="Nome">
+  
+ <br><br>
+ <a href="#">
+  <input class="prox"type="button" name=""value="proximo"></a>
+
+ <input class="env"type="submit" name="" value="ENVIAR A PULE" select="button alt" onclick="funcao1()" value="Exibir Alert" >
+<a href="#">
+ <input class="prox"type="button" name=""value="proximo"></a>
+ 
+</form>
+
 <style>
 body {
     background:red;
+    width:;
+    text-align:center;
     
 }
 input {
@@ -107,7 +192,32 @@ input {
 p {
     background:orange;
     text-align:center;
-    font-size:19px;
+    font-size:12px;
 }
-<style>
+.nome {
+    width:60%;
+    margin-right:45px;
+    text-align:center;
+    border-radius:50px;
+}
+.env {
+    background:#aff;
+    width:50%;
+    height:50;
+    border-radius:50px
+}
+.prox  {
+    width:50px;
+    border-radius:20px 10px;
+    font-size:10px;
+}
+a {
+    border:none;
+    background:orange;
+    color:orange;
+    
+}
+</style>
 
+</body>
+</html>
