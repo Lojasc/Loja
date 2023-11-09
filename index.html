@@ -2,6 +2,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<script type="text/javascript">
+ var senha='2112';
+ 
+ function login()
+ 
+ 
+{ var tentativa = document.getElementById("password").value; 
+
+
+if (tentativa == senha) 
+alert("Senha correta, entrando no sistema...");
+
+
+
+ else alert("Senha incorreta, tente novamente");
+  } 
+ </script> 
+
 </head>
 <body>
 <form>
@@ -13,40 +32,57 @@
 <p>LOGIN de ACESSO</p>
 <br><br>
 
+
 </select>
-<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  </o>
-
-LOGIN <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome">
-  
-  
- <br><br>
-SENHA <input class="nome"type="password" size="18" name="NOME"id="password"required placeholder="SENHA">
-  <br><br> <br><br>
-  
-  
-  
-  
-  <a hred="cadastro.html"></a>
- <input class="btn"type="submit" name="" value="ENVIAR" select="button alt" onclick="login()" value="Exibir Alert"></a>
-
-
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  
+ <input type="hidden" name="recipient" value="multijogo1980@gmail.com">  
+ 
  
 
+LOGIN <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome"><br>
+<br>
+ <h>SENHA<input class="nom"type="password" id="password" size="18" name="SENHA"value=""required placeholder="SENHA">
+  
+ <br><br>
+
+ 
+ 
+ 
+ <button onclick="mostra1()" id="minhaDiv" style="display:none"class="btn"type="submit" name="" value=""
+ select="button alt">Conteudo</button>
+
+
+ <button type="button"onclick="mostra('minhaDiv')">Mostrar / Esconder</button>
+
+
+
+
+
+
+
+
+<br>
+  <input type="hidden" name="subject" value="Assunto"> 
+ <input type="hidden" name="email" value="gmail.com">
+
+</form>
 
 <br><br>
 <a class="sen"href="#">ESQUECI A <f>SENHA</a>
 <a class="logi"href="cadastro.html">CRIAR LOGIN</a>
 <p></p>
 </form>
+<script>
+function funcao_a(); mostra1()
 
 
-</body>
-</ html>
+{ alert('funcao A'); } function funcao_b() { alert('funcao B'); }</script>
+
+
 <style>
 body {
     background:orange;
-    */width:100%;
-    */height:100%;
+ 
 }
 
 p {
@@ -56,7 +92,7 @@ p {
     height:50px;
 }
 h {
-    margin-left:30%;
+    margin-left:10%;
 }
 input {
     heigth: 
@@ -67,7 +103,7 @@ o {
 }
 .btn {
     width:60%; 
-    margin-left:15%;
+    margin-left:20%;
     background:red;
     height:40px;
     border-radius:40%;
@@ -86,29 +122,52 @@ o {
     text-align:center;
     height:24px;
     width:70%;
+    
+}
+a {
+       text-align:center;
+       widht:100%;
+       heigth:30%;
+}
+.nom {
+    
+    border-radius:20%;
+    text-align:center;
+    height:24px;
+    width:70%;
 }
 </style>
-<script type="text/javascript">
- var senha='2112'; 
- 
- 
-function login(){ var tentativa = document.getElementById("password").value;
-
- if (tentativa == senha) alert("Senha correta, entrando no sistema...");
- 
- 
-  else alert("Senha incorreta, tente novamente"); } 
-
-
-</script>
 <script>
  alert("SEJA BEM-VINDO!!!");
 </script>
- <script> 	function mostraResultado() { 	var numero1 = 2.50;
- 	 var numero2 = 2.50; 
- 	 var resultado = numero1 + numero2; 	document.getElementById('resultado')
- 	 .innerHTML = resultado;};
+
+
+
+ <script> 	
+ var senha ='1234'
+ 
+ function mostra1() { 	
+ var carlos = document.getElementById ("password").value;
+ 	 
+ 	 
+ 	 if(carlos==senha){ alert("Ok!");  window.location.href = " menu.html"; }
+ 	  else alert ("senha incorreta");}
  </script> 
  
+ 
+ 
+ 
+ <script >
+function mostra(el) { var display = document.getElementById(el).style.display; if (display == "none") document.getElementById(el).style.display = 'block'; else document.getElementById(el).style.display = 'none'; }
+</script>
 
+ 
+<script>
+const usuarios = [ {user: "teste", pass: "teste"}, {user: "exemplo", pass: "example"}, ] function ogin() { var done=0; var usuario = document.getElementsByName('usuario')[0].value; usuario=usuario.toLowerCase(); var senha= document.getElementsByName('senha')[0].value; senha=senha.toLowerCase(); if (usuario=="teste" && senha=="teste") { alert("Ok!"); window.location.href = "/loginok.html"; done=1; } if (done==0) { alert("Dados incorretos, tente novamente");
+ } } 
+</scipt>
+
+
+</body>
+</html>
 
