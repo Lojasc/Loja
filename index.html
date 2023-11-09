@@ -7,17 +7,25 @@
 <script type="text/javascript">
  var senha='2112';
  
- function login(){ var tentativa = document.getElementById("password").value; 
-if (tentativa == senha) 
+ function login()
+ 
+ 
+{ var tentativa = document.getElementById("password").value; 
 
-{ alert("Ok!"); window.location.href = "menu.html";} { alert("Dados incorretos, tente novamente");
- } }
+
+if (tentativa == senha) 
+{ alert("Ok!");  window.location.href = " menu.html"; } 
+
+
+
+ else alert("Senha incorreta, tente novamente");
+  } 
  </script> 
 
 </head>
 <body>
 <form>
-<imgs2c="21.jpeg" width="100%"height="130px">
+<img ="21.jpeg" width="100%"height="130px">
 
 
 
@@ -34,7 +42,7 @@ if (tentativa == senha)
  
  LOGIN <input class="nome"type="text" size="18" name="NOME" placeholder="SCVAEIDADE"readonly>
  
-
+<br>
 
 <br>
  <h>SENHA <input class="nom"type="password" id="password" size="18" name="SENHA"value=""required placeholder="SENHA">
@@ -44,7 +52,7 @@ if (tentativa == senha)
  <br>
  
  
- <button onclick="login()" id="" class="btn"type="submit" name="" value=""
+ <button onclick="login ()" id="" class="btn"type="submit" name="" value=""
  select="button alt">LOJA</button><br>
  
 
@@ -108,8 +116,9 @@ o {
     border-radius:20%;
     text-align:center;
     height:24px;
-    width:70%;
+    width:50%;
     placeholder: red; 
+    margin-left:px;
 }
 a {
        text-align:center;
@@ -121,14 +130,15 @@ a {
     border-radius:20%;
     text-align:center;
     height:24px;
-    width:70%;
+    width:50%;
+    
 
 
 </style>
 <script>
  alert("SEJA BEM-VINDO!!!");
 </scrip <script> 	
- var senha ='1234'
+ var senha ='1234';
  
  function mostra1 () { 	
  var carlos = document.getElementById ("password").value;
