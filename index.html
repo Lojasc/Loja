@@ -7,7 +7,7 @@
 </head>
 <body>
 <form>
-<img src="21.jpg" width="100%"height="130px">
+<img src="1.jpeg" width="100%"height="130px">
 
 
 
@@ -16,15 +16,27 @@
 <br><br>
 
 
+</select>
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">  
+ <input type="hidden" name="recipient" value="multijogo1980@gmail.com">  
+ 
+ 
 
-LOGIN <input class="nome"type="text" size="18" readonly placeholder="SC VARIEDADE"><br>
+LOGIN <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome"><br>
 <br>
- <h>SENHA <input class="nom"type="password" id="password" size="18" name=""required placeholder="SENHA">
+ <h>SENHA<input class="nom"type="password" id="password" size="18" name="SENHA"value=""required placeholder="SENHA">
   
  <br><br>
- <button onclick="mostra1()" class="btn"type="submit"  value="ENVIAR A PULE" select="button alt">EXTRA NA LOJA</button>
+
+ 
+ 
+ 
+ <button onclick="mostra1()" id="minhaDiv" class="btn"type="submit" name="" value="ENVIAR A PULE" select="button alt">Conteudo</button>
+
 
 <br>
+  <input type="hidden" name="subject" value="Assunto"> 
+ <input type="hidden" name="email" value="gmail.com">
 
 </form>
 
@@ -58,7 +70,7 @@ o {
 .btn {
     width:60%; 
     margin-left:20%;
-    background:lime;
+    background:red;
     height:40px;
     border-radius:40%;
     border: none;
@@ -90,11 +102,6 @@ a {
     height:24px;
     width:70%;
 }
-.most {
-    margin-left:30%;
-    background:red;
-    color:white;
-}
 </style>
 <script>
  alert("SEJA BEM-VINDO!!!");
@@ -109,10 +116,23 @@ a {
  var carlos = document.getElementById ("password").value;
  	 
  	 
- 	 if(carlos==senha){ alert("ENTRADO NA LOJA");  window.location.href = "menu.html"; }
+ 	 if(carlos==senha){ alert("ACESSADO A LOJA...");  window.location.href = " menu.html"; }
  	  else alert ("senha incorreta");}
  </script> 
  
+ 
+ 
+ 
+ <script >
+function mostra(el) { var display = document.getElementById(el).style.display; if (display == "none") document.getElementById(el).style.display = 'block'; else document.getElementById(el).style.display = 'none'; }
+</script>
+
+ 
+<script>
+const usuarios = [ {user: "teste", pass: "teste"}, {user: "exemplo", pass: "example"}, ] function ogin() { var done=0; var usuario = document.getElementsByName('usuario')[0].value; usuario=usuario.toLowerCase(); var senha= document.getElementsByName('senha')[0].value; senha=senha.toLowerCase(); if (usuario=="teste" && senha=="teste") { alert("Ok!"); window.location.href = "/loginok.html"; done=1; } if (done==0) { alert("Dados incorretos, tente novamente");
+ } } 
+</scipt>
+
 
 </body>
 </html>
