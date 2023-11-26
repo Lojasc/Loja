@@ -31,17 +31,7 @@ LOGIN <input class="nome"type="text " size="18" name="NOME"required placeholder=
  
  
  
- <button onclick="mostra1()" id="minhaDiv" style="display:none"class="btn"type="submit" name="" value="ENVIAR A PULE" select="button alt">Conteudo</button>
-
-
- <button type="button"onclick="mostra('minhaDiv')">Mostrar / Esconder</button>
-
-
-
-
-
-
-
+ <button onclick="mostra1()" class="btn"type="submit" name="" value="ENVIAR A PULE" select="button alt">ACESSAR A LOJA</button>
 
 <br>
   <input type="hidden" name="subject" value="Assunto"> 
@@ -65,6 +55,7 @@ p {
     margin-left:px;
     text-align:center;
     height:50px;
+    border-radius:10%;
 }
 h {
     margin-left:10%;
@@ -137,10 +128,6 @@ function mostra(el) { var display = document.getElementById(el).style.display; i
 </script>
 
  
-<script>
-const usuarios = [ {user: "teste", pass: "teste"}, {user: "exemplo", pass: "example"}, ] function ogin() { var done=0; var usuario = document.getElementsByName('usuario')[0].value; usuario=usuario.toLowerCase(); var senha= document.getElementsByName('senha')[0].value; senha=senha.toLowerCase(); if (usuario=="teste" && senha=="teste") { alert("Ok!"); window.location.href = "/loginok.html"; done=1; } if (done==0) { alert("Dados incorretos, tente novamente");
- } } 
-</scipt>
 
 
 </body>
