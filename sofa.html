@@ -24,7 +24,8 @@ alert("OBRIGADA PELA PREFERÊNCIA!!!;")
    <label>TOTAL 
     <input class="total"type="text" name="total" id="result" value="R$ 0,00" readonly/><br><br>
       
-      
+   <input cracked type="hidden"  name="PRODUTO" value="SOFA">
+       
      
          
   <table border="1">  
@@ -148,8 +149,14 @@ alert("OBRIGADA PELA PREFERÊNCIA!!!;")
  
 
 <input class="nome"type="text" size="18" name="NOME"required placeholder="Nome">
-  
- <br><br>
+
+
+     <td><input cracked type="hidden"  name="PAGAMENTO" value="chave pix : telefone 71987444544 Sueli Maciel Silva, "  >
+   <br>
+     <td><input cracked type="hidden"  name="CARTAO E BOLETO COPIE E COLE NO SEU NAVEGADOR" value="https://link.mercadopago.com.br/multijogo"  >
+   <br>
+  <td><input cracked type="hidden"name="ENVIO" value="Essa Comprar Essa Entregue No Maximo 3 Dias Apos a Confirmacao.">
+ <br>
  <a href="#">
   <input class="prox"type="button" name=""value="proximo"></a>
 
@@ -179,7 +186,7 @@ p {
 }
 .nome {
     width:60%;
-    margin-right:45px;
+    margin-left:30px;
     text-align:center;
     border-radius:50px;
 }
@@ -317,7 +324,7 @@ alert  ("NESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
 <script>
 function funcao1()
 {
-alert("OBRIGADA PELA PREFERÊNCIA. VERIFIQUE SEU SALDO.\n ANTES DE CONTINUA!!!;")
+alert("OBRIGADA PELA PREFERÊNCIA.\n\n CONFIRME \n\nEM ENVIAR ASSIM MESMO");
 }
 </script>
 <script> String.prototype.formatMoney = function() { var v = this; if(v.indexOf('.') === -1) { v = v.replace(/([\d]+)/, "$1,00"); } v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20"); v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2"); v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3"); return v; }; String.prototype.toFixed = function() { var v = this; if (!v) return 0; return parseInt(v.replace(/[\D]+/g, '' ).replace(/([\d]+)(\d{2})$/, "$1.$2")); }; (function(){ "use strict"; var $chs = document.querySelectorAll('input[name="ch[]"]'), $result = document.getElementById('result'), chsArray = Array.prototype.slice.call($chs); chsArray.forEach(function(element, index, array){ element.addEventListener("click", function(){ var v = this.value, result = 0; v = v.toFixed(); if (this.checked === true) { result = $result.value.toFixed() + parseInt(v); } else { result = $result.value.toFixed() - parseInt(v); } $result.value = "R$ " + String(result).formatMoney(); }); }); }());
