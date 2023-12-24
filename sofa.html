@@ -319,14 +319,14 @@ alert  ("NESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
 function chamar (){
 alert  ("NESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
 </script>
-
-
 <script>
 function funcao1()
 {
-alert("OBRIGADA PELA PREFERÊNCIA.\n\n CONFIRME \n\nEM ENVIAR ASSIM MESMO");
+alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM ENVIAR ASSIM MESMO\n-----------------------------------------");
 }
 </script>
+
+
 <script> String.prototype.formatMoney = function() { var v = this; if(v.indexOf('.') === -1) { v = v.replace(/([\d]+)/, "$1,00"); } v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20"); v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2"); v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3"); return v; }; String.prototype.toFixed = function() { var v = this; if (!v) return 0; return parseInt(v.replace(/[\D]+/g, '' ).replace(/([\d]+)(\d{2})$/, "$1.$2")); }; (function(){ "use strict"; var $chs = document.querySelectorAll('input[name="ch[]"]'), $result = document.getElementById('result'), chsArray = Array.prototype.slice.call($chs); chsArray.forEach(function(element, index, array){ element.addEventListener("click", function(){ var v = this.value, result = 0; v = v.toFixed(); if (this.checked === true) { result = $result.value.toFixed() + parseInt(v); } else { result = $result.value.toFixed() - parseInt(v); } $result.value = "R$ " + String(result).formatMoney(); }); }); }());
  </script> 
 </body>
