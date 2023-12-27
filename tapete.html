@@ -2,9 +2,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-</head>
-<body style="background-color:orange">
+<script>
+alert("OBRIGADA PELA PREFERÊNCIA ^.^")
 
+</script>
 <script>
 function checkChoice(whichbox) { with(whichbox.form) { if (whichbox.checked == false) hiddentotal.value = eval(hiddentotal.value) * eval(whichbox.value); else hiddentotal.value = eval(hiddentotal.value) * eval(whichbox.value); return (formatCurrency(hiddentotal.value));; } } 
 
@@ -26,13 +27,14 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 </head>
 <body>
 <form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
-<body style="background-color:gold ">
+
 
   <a href="index.html">INICIO</a>
-<p style="text-align: center; font-size: 20px; color: blue">
+<p style="text-align: center; font-size: 20px; color: blue"></p>
 <b> 🔰TAPETES🔰<br><br>
 
-   
+     <label>TOTAL 
+    <input class="total"type="text" name="total" id="result" value="R$ 0,00" /><br><br></label>
       
       
      
@@ -42,14 +44,14 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 
 
 <tr>
-<td><input type="checkbox" name="tapete" value="tapete_R$ 19.90 (01)"  >
-<img src="tap1.jpeg" alt="some" width="82" height="100"><br>R$ 15.90</label>
+<td><input type="checkbox" name="ch[]" value="40,01"  >
+<img onclick="chamar1()"src="tap1.jpeg" alt="some" width="82" height="100"><br><b>R$ 45,90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (02)"  ><img src="tap2.jpeg" alt="some" width="82" height="100"><br>R$ 15.90</label> <label class="btn btn-default">
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,02"  ><img onclick="chamar1()"src="tap2.jpeg" alt="some" width="82" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default">
  
  
-<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (03)"><img src="tap3.jpeg" alt="some" width="80" height="100"><br>R$ 15.90</label>
+<td> <input type="checkbox" name="ch[]" id="option3" value=" 40,03"><img onclick="chamar1()"src="tap3.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
 <label class="btn btn-default"> 
  
  
@@ -58,36 +60,36 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 <td>
 
 
-<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (04)"  ><img src="tap4.jpeg" alt="some" width="80" height="100"><br>R$ 15.90</label>
+<input type="checkbox" name="ch[]" value=" 40,04"  ><img onclick="chamar1()"src="tap4.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
 
  <tr>
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (05)"  ><img src="tap5.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label> <label class="btn btn-default"> 
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,05"  ><img onclick="chamar1()"src="tap5.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default"> 
   
  
  
 <td>
 
 
-<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (06)"  ><img src="tap6.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label>
+<input type="checkbox" name="ch[]" value=" 40,06"  ><img onclick="chamar1()"src="tap6.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
    
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (07)"><img src="tap7.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label> <label class="btn btn-default"> 
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,07"><img onclick="chamar1()"src="tap7.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default"> 
   
 
 
 <td>
 
 
-<input type="checkbox" name="tapete"   value=" tapete_R$ 19.90 (08)"  ><img src="tap8.jpeg" alt="some" width="80" height="100"><br>R$ 17.90</label>
+<input type="checkbox" name="ch[]"   value=" 40,08"  ><img onclick="chamar1()"src="tap8.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
 <tr>
- <td><input type="checkbox"  name="tapete" id="option2" value=" tapete_R$ 19.90 (09)"  ><img src="tap9.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label> <label class="btn btn-default">
+ <td><input type="checkbox"  name="ch[]" id="option2" value=" 40,09"  ><img onclick="chamar1()"src="tap9.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default">
  
  
-<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (10)" ><img src="tap10.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label>
+<td> <input type="checkbox" name="ch[]" id="option3" value=" 40,10" ><img onclick="chamar1()"src="tap10.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
 <label class="btn btn-default"> 
  
  
@@ -96,35 +98,35 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 <td>
 
 
-<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (11)"  ><img src="tap11.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label>
+<input type="checkbox" name="ch[]" value=" 40,11"  ><img onclick="chamar1()"src="tap11.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
 
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (12)"  ><img src="tap12.jpeg" alt="some" width="80" height="100"><br>R$ 19.90</label> <label class="btn btn-default"> 
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,12"  ><img onclick="chamar1()"src="tap12.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default"> 
   
  <tr>
  
 <td>
 
 
-<input type="checkbox" name="tapete" value="tapete_R$ 19.90 (13)"  ><img src="tap13.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label>
+<input type="checkbox" name="ch[]" value="40,13"  ><img onclick="chamar1()"src="tap13.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
    
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (14)"  ><img src="tap14.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label> <label class="btn btn-default"> 
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,14"  ><img onclick="chamar1()"src="tap14.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default"> 
   
 
 
 <td>
 
 
-<input type="checkbox" name="tapete"   value=" tapete_R$ 19.90 (015)"  ><img src="tap15.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label>
+<input type="checkbox" name="ch[]"   value=" 40,15"  ><img onclick="chamar1()"src="tap15.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (016)"  ><img src="tap16.jpeg" alt="some" width="80" height="100"><br>R$ 22.90</label> <label class="btn btn-default">
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,16"  ><img onclick="chamar1()"src="tap16.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default">
  
  <tr>
-<td> <input type="checkbox" name="tapete" id="option3" value=" tapete_R$ 19.90 (017)" ><img src="tap17.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+<td> <input type="checkbox" name="ch[]" id="option3" value=" 40,17" ><img onclick="chamar1()"src="tap17.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
 <label class="btn btn-default"> 
  
  
@@ -133,18 +135,18 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 <td>
 
 
-<input type="checkbox" name="tapete" value="tapete_R$ 19.90 (018)"><img src="tap18.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+<input type="checkbox" name="ch[]" value="40,18"><img onclick="chamar1()"src="tap18.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
 
  
- <td><input type="checkbox" name="tapete" id="option2" value=" tapete_R$ 19.90 (019)"  ><img src="tap19.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label> <label class="btn btn-default"> 
+ <td><input type="checkbox" name="ch[]" id="option2" value=" 40,19"  ><img onclick="chamar1()"src="tap19.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button> <label class="btn btn-default"> 
   
  
  
 <td>
 
 
-<input type="checkbox" name="tapete" value=" tapete_R$ 19.90 (20)"  ><img src="tap20.jpeg" alt="some" width="80" height="100"><br>R$ 29.90</label>
+<input type="checkbox" name="ch[]" value=" 40,20"  ><img onclick="chamar1()"src="tap20.jpeg" alt="some" width="80" height="100"><br><b>R$ 45.90</b><br><h>Kit 3 peças luxo provence rozac<br></h><b> 100% algodao</button>
  <label class="btn btn-default"> 
    
  
@@ -172,33 +174,41 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
  <a href="#">
   <input class="prox"type="button" name=""value="proximo"></a>
 
- <input class="env"type="submit" name="" value="ENVIAR A PULE" select="button alt" onclick="funcao1()" value="Exibir Alert" >
+ <input class="env"type="submit" name="" value="ENVIAR COMPRAR" select="button alt" onclick="funcao1()" value="Exibir Alert" >
 <a href="#">
  <input class="prox"type="button" name=""value="proximo"></a>
  
 </form>
 
 <style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+
 body {
-    background:red;
-    width:;
+    font-size:px;
+    background:green;
+    color:white;
     text-align:center;
+    
     
 }
 input {
     width:100%;
     height:20px;
+    
 }
 p {
-    background:orange;
+    background:red;
+    color:white;
     text-align:center;
     font-size:12px;
+    margin-up:20px;
 }
 .nome {
     width:60%;
     margin-right:45px;
     text-align:center;
-    border-radius:50px;
+    border-radius:0%;
 }
 .env {
     background:#aff;
@@ -213,11 +223,136 @@ p {
 }
 a {
     border:none;
-    background:orange;
-    color:orange;
+    background:green;
+    color:green;
     
 }
-</style>
+table {
+    font-size:10px;
+}
+h {
+    color:blue;
+}
+.total {
+    text-align:center;
+    width:25%;
+    color:;
+    border-radius:15%;
+}
 
-</body>
+</style>
+<script>
+function chamar1 (){
+alert  ("ESTAMPA COLORIDA \n100% ALGODAO\nNESSA COMPRA VOCE VAI ECONOMIZAR 5%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar2(){
+alert  ("ESTAMPA COLORIDA \n100% ALGODAO\nNESSA COMPRA VOCE VAI ECONOMIZAR 5%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar3(){
+alert  ("ESTAMPA COLORIDA \n100% ALGODAO\nNESSA COMPRA VOCE VAI ECONOMIZAR 5%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar4 (){
+alert  ("NESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar5 (){
+alert  ("NESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar6 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nESSE KIT\nCONTEM 3 PECAS\n\n01 COBRE LEITOR\n02 PORTA TRAVESSEIRO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar7 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nESSE KIT\nCONTEM 3 PECAS\n\n01 COBRE LEITOR\n02 PORTA TRAVESSEIRO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar8 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar9 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar10 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar 11(){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar12 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar13 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+<script>
+function chamar14 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar15 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar16 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar17 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar18 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar19 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar20 (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+<script>
+function chamar (){
+alert  ("COBRE LEITOR  \nESTAMPA COLORIDA \n100% ALGODAO\n\nNESSA COMPRA VOCE VAI ECONOMIZAR 10%\nPARA PROXIMA COMPRAR")};
+</script>
+
+
+<script>
+function funcao1()
+{
+alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM ENVIAR ASSIM MESMO\n-----------------------------------------");
+}
+</script>
+<script> String.prototype.formatMoney = function() { var v = this; if(v.indexOf('.') === -1) { v = v.replace(/([\d]+)/, "$1,00"); } v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20"); v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2"); v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3"); return v; }; String.prototype.toFixed = function() { var v = this; if (!v) return 0; return parseInt(v.replace(/[\D]+/g, '' ).replace(/([\d]+)(\d{2})$/, "$1.$2")); }; (function(){ "use strict"; var $chs = document.querySelectorAll('input[name="ch[]"]'), $result = document.getElementById('result'), chsArray = Array.prototype.slice.call($chs); chsArray.forEach(function(element, index, array){ element.addEventListener("click", function(){ var v = this.value, result = 0; v = v.toFixed(); if (this.checked === true) { result = $result.value.toFixed() + parseInt(v); } else { result = $result.value.toFixed() - parseInt(v); } $result.value = "R$ " + String(result).formatMoney(); }); }); }());
+ </script> 
+</body> 
 </html>
