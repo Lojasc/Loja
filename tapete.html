@@ -358,5 +358,9 @@ alert("OBRIGADA PELA PREFERÊNCIA.\n\nCONFIRME\n__________________________\nEM E
 </script>
 <script> String.prototype.formatMoney = function() { var v = this; if(v.indexOf('.') === -1) { v = v.replace(/([\d]+)/, "$1,00"); } v = v.replace(/([\d]+)\.([\d]{1})$/, "$1,$20"); v = v.replace(/([\d]+)\.([\d]{2})$/, "$1,$2"); v = v.replace(/([\d]+)([\d]{3}),([\d]{2})$/, "$1.$2,$3"); return v; }; String.prototype.toFixed = function() { var v = this; if (!v) return 0; return parseInt(v.replace(/[\D]+/g, '' ).replace(/([\d]+)(\d{2})$/, "$1.$2")); }; (function(){ "use strict"; var $chs = document.querySelectorAll('input[name="ch[]"]'), $result = document.getElementById('result'), chsArray = Array.prototype.slice.call($chs); chsArray.forEach(function(element, index, array){ element.addEventListener("click", function(){ var v = this.value, result = 0; v = v.toFixed(); if (this.checked === true) { result = $result.value.toFixed() + parseInt(v); } else { result = $result.value.toFixed() - parseInt(v); } $result.value = "R$ " + String(result).formatMoney(); }); }); }());
  </script> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5571987444544?text=quero%20finalizar%20a%20compra" style="position:fixed;width:60px;height:60px;bottom:40px;right:10px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
 </body> 
 </html>
