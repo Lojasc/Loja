@@ -194,15 +194,18 @@ function updateWhatsAppLink() {
     let items = Array.from(checkboxes).map(checkbox => checkbox.nextElementSibling.textContent.trim()).join('\n--------------------------------------------------------\n');
 var chavePix='chave pix 71987444544';
 var tutullo ='LOJA SC VARIEDADE';
-
+var entrega="Esse Perdido Sera Entregue no maximo de 2 dias apos a data do pagamento"
 
 let message =                    `          ${tutullo}
  Nome : ${nome}
                         Total : ${total}\n
 Itens : ${items}
 
-               ${chavePix}`;
-    let whatsappLink = `https://wa.me/5571992290058?text=${encodeURIComponent(message)}`;
+               ${chavePix}
+ 
+ ${entrega}`;
+              
+    let whatsappLink = `https://wa.me/5571987444544?text=${encodeURIComponent(message)}`;
 
     document.getElementById('whatsappLink').href = whatsappLink;
 }
