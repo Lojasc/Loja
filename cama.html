@@ -191,10 +191,18 @@ function updateWhatsAppLink() {
     let checkboxes = document.querySelectorAll('input[name="ch[]"]:checked');
     let nome = document.getElementById('nome').value;
     let total = document.getElementById('result').value;
-    let items = Array.from(checkboxes).map(checkbox => checkbox.nextElementSibling.textContent.trim()).join(', ');
+    let items = Array.from(checkboxes).map(checkbox => checkbox.nextElementSibling.textContent.trim()).join('\n--------------------------------------------------------\n');
+var chavePix='chave pix 71987444544';
+var tutullo ='LOJA SC VARIEDADE';
 
-    let message = `Nome: ${nome}\nTotal: ${total}\n\nItens: ${items}`;
-    let whatsappLink = `https://wa.me/5571987444544?text=${encodeURIComponent(message)}`;
+
+let message =                    `          ${tutullo}
+ Nome : ${nome}
+                        Total : ${total}\n
+Itens : ${items}
+
+               ${chavePix}`;
+    let whatsappLink = `https://wa.me/5571992290058?text=${encodeURIComponent(message)}`;
 
     document.getElementById('whatsappLink').href = whatsappLink;
 }
